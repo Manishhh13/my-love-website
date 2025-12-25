@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our World ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      text-align: center;
+      color: white;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .emoji {
+      font-size: 3rem;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      background: #ff4b5c;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Our World ❤️</h1>
+  <p>Each page is a piece of us.</p>
+
+  <div class="grid">
+    <a class="card" href="letter.html">
+      <div class="emoji">💌</div>
+      <h2>Love Letter</h2>
+      <p>Words from my heart to you</p>
+    </a>
+
+    <a class="card" href="timeline.html">
+      <div class="emoji">🕰</div>
+      <h2>Our Journey</h2>
+      <p>Every moment that made us</p>
+    </a>
+
+    <a class="card" href="music.html">
+      <div class="emoji">🎶</div>
+      <h2>Our Songs</h2>
+      <p>Music that feels like you</p>
+    </a>
+
+    <a class="card" href="future.html">
+      <div class="emoji">🌈</div>
+      <h2>Our Future</h2>
+      <p>Dreams we’ll live together</p>
+    </a>
+
+    <a class="card" href="secret.html">
+      <div class="emoji">🎁</div>
+      <h2>A Secret</h2>
+      <p>Only for you</p>
+    </a>
+  </div>
+
+  <a class="back" href="index.html">⬅ Back to Home</a>
+
+</body>
+</html>

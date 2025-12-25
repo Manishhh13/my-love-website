@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Journey 🕰️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .step {
+      display: none;
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      animation: fade 0.6s;
+    }
+
+    .step img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .step h2 {
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .controls {
+      margin-top: 25px;
+    }
+
+    button, a {
+      background: #ff4b5c;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Our Journey Together 🕰️</h1>
+<p>One step at a time, one memory at a time ❤️</p>
+
+<!-- STEP 1 -->
+<div class="step">
+  <img src="photos/step1.jpg" alt="First Talk">
+  <h2>The First Conversation 💬</h2>
+  <p>It all started with a simple conversation, but somehow it felt different from the very beginning.</p>
+</div>
+
+<!-- STEP 2 -->
+<div class="step">
+  <img src="photos/step2.jpg" alt="Late Night Chats">
+  <h2>Late Night Talks 🌙</h2>
+  <p>Those endless chats where time didn’t matter and sleep felt optional.</p>
+</div>
+
+<!-- STEP 3 -->
+<div class="step">
+  <img src="photos/step3.jpg" alt="First Smile">
+  <h2>That Smile 😊</h2>
+  <p>The moment I realized your smile could make my entire day better.</p>
+</div>
+
+<!-- STEP 4 -->
+<div class="step">
+  <img src="photos/step4.jpg" alt="First Meeting">
+  <h2>Our First Meeting 🌸</h2>
+  <p>Nervous hearts, shy smiles, and a moment I will never forget.</p>
+</div>
+
+<!-- STEP 5 -->
+<div class="step">
+  <img src="photos/step5.jpg" alt="Becoming Us">
+  <h2>Becoming Us ❤️</h2>
+  <p>The day we stopped being two people and became "us".</p>
+</div>
+
+<!-- STEP 6 -->
+<div class="step">
+  <img src="photos/step6.jpg" alt="Small Fights">
+  <h2>Small Fights 😅</h2>
+  <p>Not every moment was perfect, but every fight taught us something new.</p>
+</div>
+
+<!-- STEP 7 -->
+<div class="step">
+  <img src="photos/step7.jpg" alt="Understanding">
+  <h2>Understanding Each Other 🤍</h2>
+  <p>Learning each other’s silences, moods, and emotions.</p>
+</div>
+
+<!-- STEP 8 -->
+<div class="step">
+  <img src="photos/step8.jpg" alt="Memories">
+  <h2>Creating Memories 📸</h2>
+  <p>Every photo holds a story, every memory holds a feeling.</p>
+</div>
+
+<!-- STEP 9 -->
+<div class="step">
+  <img src="photos/step9.jpg" alt="Support">
+  <h2>Being Each Other’s Strength 💪</h2>
+  <p>Standing by each other even on the toughest days.</p>
+</div>
+
+<!-- STEP 10 -->
+<div class="step">
+  <img src="photos/step10.jpg" alt="Forever">
+  <h2>Still Writing Our Story ✨</h2>
+  <p>This journey is far from over, and the best chapters are yet to come.</p>
+</div>
+
+<div class="controls">
+  <button onclick="prevStep()">⬅ Previous</button>
+  <button onclick="nextStep()">Next ➜</button>
+  <a href="page2.html">Back to Menu</a>
+</div>
+
+<script>
+  const steps = document.querySelectorAll('.step');
+  let current = 0;
+
+  function showStep(index) {
+    steps.forEach(step => step.style.display = 'none');
+    steps[index].style.display = 'block';
+  }
+
+  function nextStep() {
+    if (current < steps.length - 1) {
+      current++;
+      showStep(current);
+    }
+  }
+
+  function prevStep() {
+    if (current > 0) {
+      current--;
+      showStep(current);
+    }
+  }
+
+  showStep(current);
+</script>
+
+</body>
+</html>
